@@ -10,10 +10,13 @@
     <ul>
         {% for post in posts %}
         <li>
+            
             <h2>{{ post.title }}</h2>
             <p>{{ post.description }}</p>
             <p>Created: {{ post.created_date }}</p>
-            <img src="{{ post.image.url }}" alt="Post Image">
+            <img src="{{ post.image.url }}" alt="Post Image" width="500" height="500">
+        
+            
         </li>
         {% endfor %}
     </ul>
